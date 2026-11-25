@@ -8,6 +8,7 @@ Le projet est organisé ainsi :
 
 - `lib/main.dart` : lancement de l'application, navigation et gestion de la session.
 - `lib/pages/` : écrans principaux.
+- `lib/pages/forum/` : composants dédiés à l’écran du fil de discussion.
 - `lib/pages/profile/` : composants dédiés à l’écran du profil.
 - `lib/widgets/` : composants visuels réutilisables.
 - `lib/models/` : modèles des utilisateurs et des messages.
@@ -75,6 +76,15 @@ Construit la structure principale de l'application.
 ---
 
 ## `lib/pages/forum_home_page.dart`
+
+### Organisation de la page du forum
+
+La logique générale reste dans `ForumHomePage`, tandis que la présentation est séparée dans le dossier `lib/pages/forum/` :
+
+- `forum_header.dart` : titre du forum, bouton d’actualisation et titre du fil.
+- `forum_loading_states.dart` : erreurs principales et erreurs de rafraîchissement.
+- `forum_message_editor.dart` : dialogue de réponse ou de modification.
+- `forum_message_tree.dart` : affichage récursif des messages et des réponses.
 
 ### `ForumHomePage`
 
