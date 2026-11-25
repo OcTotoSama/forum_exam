@@ -8,6 +8,7 @@ Le projet est organisé ainsi :
 
 - `lib/main.dart` : lancement de l'application, navigation et gestion de la session.
 - `lib/pages/` : écrans principaux.
+- `lib/pages/profile/` : composants dédiés à l’écran du profil.
 - `lib/widgets/` : composants visuels réutilisables.
 - `lib/models/` : modèles des utilisateurs et des messages.
 - `lib/services/` : accès à l'API, authentification et stockage sécurisé du jeton.
@@ -240,6 +241,15 @@ Classe privée qui contient temporairement les données saisies dans le dialogue
 ---
 
 ## `lib/pages/profile_page.dart`
+
+### Organisation de la page Profil
+
+La logique principale reste dans `ProfilePage`, tandis que la présentation est séparée dans le dossier `lib/pages/profile/` :
+
+- `profile_auth_form.dart` : connexion et inscription.
+- `profile_edit_form.dart` : modification du profil.
+- `profile_view.dart` : profil connecté, statistiques et déconnexion.
+- `profile_form_widgets.dart` : validateurs, champs et widgets communs.
 
 ### `ProfilePage`
 
